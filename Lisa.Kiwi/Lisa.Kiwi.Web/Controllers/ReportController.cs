@@ -4,7 +4,7 @@ using System.Web;
 using System.Web.Mvc;
 using Lisa.Kiwi.WebApi;
 using Lisa.Kiwi.WebApi.Access;
-using Lisa.Common.Access;
+using Lisa.Kiwi.Web.Access;
 using SendGrid;
 using System.Net;
 using System.Net.Mail;
@@ -435,7 +435,7 @@ namespace Lisa.Kiwi.Web
             var tokenCookie = Request.Cookies["token"];
             if (tokenCookie != null)
             {
-                _reportProxy.Token = new Common.Access.Token
+                _reportProxy.Token = new WebApi.Access.Token
                 {
                     Value = tokenCookie.Value
                 };

@@ -4,9 +4,11 @@ using System.Web;
 using System.Web.Mvc;
 using Lisa.Kiwi.WebApi.Access;
 using System.Web.Configuration;
-using Lisa.Common.Access;
+// using Lisa.Common.Access;
+using Lisa.Kiwi.Web.Access;
 using Lisa.Kiwi.WebApi;
 using Lisa.Kiwi.Web.Resources;
+
 
 namespace Lisa.Kiwi.Web
 {
@@ -118,7 +120,7 @@ namespace Lisa.Kiwi.Web
             var tokenCookie = Request.Cookies["token"];
             if (tokenCookie != null)
             {
-                proxy.Token = new Common.Access.Token
+                proxy.Token = new WebApi.Access.Token
                 {
                     Value = tokenCookie.Value
                 };

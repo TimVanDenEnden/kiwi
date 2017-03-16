@@ -189,6 +189,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lisa.Kiwi.WebApi.Access\Lisa.Kiwi.WebApi.Access.csproj">
+      <Project>{2587c3b3-925f-4d00-96c7-535c57f90675}</Project>
+      <Name>Lisa.Kiwi.WebApi.Access</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lisa.Kiwi.Web\Lisa.Kiwi.Web.csproj">
+      <Project>{16cc3674-2b55-4cfa-97f7-8c3f2af582f6}</Project>
+      <Name>Lisa.Kiwi.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

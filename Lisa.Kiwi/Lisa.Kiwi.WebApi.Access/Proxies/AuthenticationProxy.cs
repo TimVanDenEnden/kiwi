@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
-using Lisa.Common.Access;
+//using Lisa.Common.Access;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -30,7 +30,7 @@ namespace Lisa.Kiwi.WebApi.Access
 
             if (response.StatusCode != HttpStatusCode.OK)
             {
-                throw new WebApiException("Unexpected statuscode", response.StatusCode);
+                throw new Lisa.Kiwi.WebApi.Access.WebApiException("Unexpected statuscode", response.StatusCode);
             }
 
             var content = await response.Content.ReadAsStringAsync();

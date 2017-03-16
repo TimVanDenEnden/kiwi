@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
 using System.Web.Mvc;
-using Lisa.Common.Access;
+using Lisa.Kiwi.Web.Access;
 using Lisa.Kiwi.Web.Resources;
 using Lisa.Kiwi.WebApi;
 using Lisa.Kiwi.WebApi.Access;
-using Token = Lisa.Common.Access.Token;
+using Token = Lisa.Kiwi.Web.Access.Token;
 
 namespace Lisa.Kiwi.Web
 {
@@ -18,7 +18,7 @@ namespace Lisa.Kiwi.Web
             var tokenCookie = Request.Cookies["token"];
             if (tokenCookie != null)
             {
-                _reportProxy.Token = new Token
+                _reportProxy.Token = new WebApi.Access.Token
                 {
                     Value = tokenCookie.Value
                 };

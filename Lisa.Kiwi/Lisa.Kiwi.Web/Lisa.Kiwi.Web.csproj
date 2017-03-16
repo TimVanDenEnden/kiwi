@@ -52,10 +52,6 @@
       <HintPath>..\packages\ExpressiveAnnotations.dll.2.3.4\lib\net45\ExpressiveAnnotations.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Lisa.Common, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Lisa.Common.1.0.4\lib\portable-net45+sl5+wp8+win8\Lisa.Common.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Data.Edm, Version=5.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Data.Edm.5.6.4\lib\net40\Microsoft.Data.Edm.dll</HintPath>
@@ -107,6 +103,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Spatial, Version=5.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Spatial.5.6.4\lib\net40\System.Spatial.dll</HintPath>
       <Private>True</Private>
@@ -494,7 +491,6 @@
       <Name>Lisa.Kiwi.WebApi.Access</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Resources\Categories.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
